@@ -70,7 +70,6 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Title</th>
-                                <th>Image</th>
                                 <th>Status</th>
                                 <th>Actions</th>
                             </tr>
@@ -80,7 +79,6 @@
                                 <tr>
                                     <td>{{ $category->id }}</td>
                                     <td>{{ $category->title }}</td>
-                                    <td><img src="/{{ $category->image }}" class="img-thumbnail" width="90" height="100"></td>
                                     <td>
                                         @switch($category->status)
                                             @case(config('constants.status.destroy'))

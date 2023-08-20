@@ -53,31 +53,6 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="row mb-3">
-                                <label class="col-sm-2 col-form-label"></label>
-                                <div class="col-sm-10">
-                                    <img src="/{{ $category->image }}" class="img-thumbnail" width="90" height="100">
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label class="col-sm-2 col-form-label">
-                                    Image
-                                </label>
-                                <div class="col-sm-10">
-                                    <input type="file" class="form-control" name="image">
-                                    @error('image')
-                                        <p class="text-danger">{{ $message }}</p>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label class="col-sm-2 col-form-label">
-                                    Description
-                                </label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control" rows="5" placeholder="Description" id="description" name="description">{{ $category->description }}</textarea>
-                                </div>
-                            </div>
                             <div class="row justify-content-end">
                                 <div class="col-sm-10">
                                     <a type="button" class="btn btn-outline-primary" href="{{ route('admin.category.index') }}">
@@ -92,10 +67,4 @@
             </div>
         </div>
     </div>
-@endsection
-
-@section('js')
-    <script>
-        CKEDITOR.replace( 'description' );
-    </script>
 @endsection

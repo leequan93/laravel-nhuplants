@@ -15,7 +15,7 @@ let menu, animate;
     /*	Preloader
     /*----------------------------------------------------*/
     var preloader = $('#preloader');
-      preloader.fadeOut(200);
+    preloader.fadeOut(200);
   });
 
   let layoutMenuEl = document.querySelectorAll('#layout-menu');

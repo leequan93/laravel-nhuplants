@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Storage;
-use Intervention\Image\Facades\Image;
 
 class CategoryController extends Controller
 {
@@ -40,24 +39,7 @@ class CategoryController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required|string',
-            'image' => 'required|image|mimes:jpeg,png,jpg|max:1024',
-            'description' => 'nullable|string',
         ]);
-
-        if ($request->hasFile('image')) {
-            $fileName = 'i-c-' . time() . rand(10,99) . '.' . $request->file('image')->extension();
-
-            // storage file
-            $image = Storage::putFileAs('public/image/category', $request->file('image'), $fileName);
-            $image = Str::replace('public', 'storage', $image);
-
-            // resize file
-            Image::make(public_path($image))
-                ->resize(config('constants.resize.category.w'), config('constants.resize.category.h'))
-                ->save();
-
-            $validated['image'] = $image;
-        }
 
         $validated['status'] = config('constants.status.draft');
 
@@ -78,27 +60,7 @@ class CategoryController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required|string',
-            'image' => 'image|mimes:jpeg,png,jpg|max:1024',
-            'description' => 'nullable|string',
         ]);
-
-        if ($request->hasFile('image')) {
-            $fileName = 'i-c-' . time() . rand(10,99) . '.' . $request->file('image')->extension();
-
-            // storage file
-            $image = Storage::putFileAs('public/image/category', $request->file('image'), $fileName);
-            $image = Str::replace('public', 'storage', $image);
-
-            // resize file
-            Image::make(public_path($image))
-                ->resize(config('constants.resize.category.w'), config('constants.resize.category.h'))
-                ->save();
-
-            // delete old file
-            Storage::delete(Str::replace('storage', 'public', $category->image));
-
-            $validated['image'] = $image;
-        }
 
         $category->update($validated);
 
