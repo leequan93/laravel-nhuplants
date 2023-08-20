@@ -17,9 +17,7 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::get('/shop', function () {
-    return view('shop');
-})->name('shop');
+Route::get('/shop', [App\Http\Controllers\ShopController::class, 'index'])->name('shop');
 
 Route::get('/product', function () {
     return view('product');
