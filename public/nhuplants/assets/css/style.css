@@ -10765,3 +10765,30 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   display: flex;
   justify-content: end;
 }
+.pagination .page-item {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.pagination .page-item .page-link {
+  padding: 0px;
+  border: none;
+  color: #000000;
+  background-color: #f1f1f1;
+}
+.pagination li.active .page-link {
+  padding: 0px;
+  border: none;
+  color: #fff;
+  background-color: #79a206;
+}
+.pagination .page-item .page-link:hover {
+  color: #fff;
+  background-color: #79a206;
+}
+.pagination .page-item .page-link:focus {
+  box-shadow: none;
+}

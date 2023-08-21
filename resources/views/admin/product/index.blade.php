@@ -20,6 +20,19 @@
                 <form action="{{ route('admin.product.index') }}" method="GET">
                     <div class="row gx-3 gy-2 align-items-center">
                         <div class="col-md-3">
+                            <label class="form-label">Category</label>
+                            <div>
+                                <select class="form-control" name="category">
+                                    <option value=""> -- Choose option --</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}" {{ $request->query('category') == $category->id ? 'selected' : '' }}>
+                                            {{ $category->title }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
                             <label class="form-label">Title</label>
                             <div>
                                 <input type="text" class="form-control" placeholder="Title" name="title" value="{{ $request->query('title') }}">
@@ -69,6 +82,7 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Category</th>
                                 <th>Title</th>
                                 <th>Price</th>
                                 <th>Image</th>
@@ -80,6 +94,7 @@
                             @foreach ($products as $product)
                                 <tr>
                                     <td>{{ $product->id }}</td>
+                                    <td>{{ $product->category->title }}</td>
                                     <td>
                                         {{ $product->title }}
                                         @if ($product->label)

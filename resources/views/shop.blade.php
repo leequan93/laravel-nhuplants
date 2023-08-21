@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 mt-3">
-                    Total: 100
+                    Total: {{ $products->total() }}
                 </div>
                 <div class="col-lg-9 col-md-12 mt-3">
                     <div class="search_container search_container_product">
@@ -87,17 +87,11 @@
                             </div>
                         @endforeach
                     </div>
-                    <div class="shop_toolbar t_bottom">
-                        <div class="pagination">
-                            <ul>
-                                <li class="current">1</li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li class="next"><a href="#">next</a></li>
-                                <li><a href="#">&gt;&gt;</a></li>
-                            </ul>
+                    @if ($products->total())
+                        <div class="shop_toolbar t_bottom">
+                            {{ $products->links() }}
                         </div>
-                    </div>
+                    @endif
                 </div>
             </div>
         </div>

@@ -218,7 +218,7 @@
                                 </label>
                                 <div class="col-sm-10">
                                     <select class="form-control" name="category_id">
-                                        <option> -- Choose option --</option>
+                                        <option value=""> -- Choose option --</option>
                                         @foreach ($categories as $category)
                                             <option value="{{ $category->id }}" {{ $product->category->id == $category->id ? 'selected' : '' }}>
                                                 {{ $category->title }}

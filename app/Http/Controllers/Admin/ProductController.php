@@ -28,12 +28,12 @@ class ProductController extends Controller
             $products = Product::where('status', '!=', config('constants.status.destroy'));
         }
 
-        if ($request->query('title')) {
-            $products = $products->where('title', 'like', '%' . $request->query('title') . '%');
+        if ($request->query('category')) {
+            $products = $products->where('category_id', '=', $request->query('category'));
         }
 
-        if ($request->query('category_id')) {
-            $products = $products->where('category_id', '=', $request->query('category_id'));
+        if ($request->query('title')) {
+            $products = $products->where('title', 'like', '%' . $request->query('title') . '%');
         }
 
         $products = $products->orderBy('id', 'desc');
