@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="/nhuplants/assets/images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="/nhuplants/assets/images/favicon.png">
         <!-- CSS 
     ========================= -->
         <!--bootstrap min css-->
@@ -96,7 +96,7 @@
                             <div class="widgets_container widget_app">
                                 <div class="footer_logo">
                                     <a href="index.html">
-                                        <img src="/nhuplants/assets/images/logo.webp" alt="">
+                                        <img src="/nhuplants/assets/images/logo.png" alt="">
                                     </a>
                                 </div>
                                 <div class="footer_widgetnav_menu">

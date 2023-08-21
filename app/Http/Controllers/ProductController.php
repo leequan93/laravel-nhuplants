@@ -14,17 +14,20 @@ class ProductController extends Controller
         $categories = Category::where('status', '=', config('constants.status.public'))->get();
 
         // products
-        $products = Product::where('status', '=', config('constants.status.public'));
+        $products = Product::select('products.*')
+                        ->join('categories', 'categories.id', '=', 'products.category_id')
+                        ->where('categories.status', '=', config('constants.status.public'))
+                        ->where('products.status', '=', config('constants.status.public'));
 
         if ($request->query('title')) {
-            $products = $products->where('title', 'like', '%' . $request->query('title') . '%');
+            $products = $products->where('products.title', 'like', '%' . $request->query('title') . '%');
         }
 
         if ($request->query('category')) {
-            $products = $products->where('category_id', '=', $request->query('category'));
+            $products = $products->where('products.category_id', '=', $request->query('category'));
         }
 
-        $products = $products->orderBy('id', 'desc');
+        $products = $products->orderBy('products.id', 'desc');
         $products = $products->paginate(12)->withQueryString();
 
         return view('shop', [

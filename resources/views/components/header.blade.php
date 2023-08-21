@@ -94,7 +94,7 @@
                     <div class="col-lg-2 col-md-3 col-4">
                         <div class="logo">
                             <a href="{{ route('home') }}">
-                                <img src="/nhuplants/assets/images/logo.webp" alt="">
+                                <img src="/nhuplants/assets/images/logo.png" alt="">
                             </a>
                         </div>
                     </div>
