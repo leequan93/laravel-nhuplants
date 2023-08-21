@@ -173,7 +173,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-7%</span>
@@ -204,7 +204,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">commodo augue
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">commodo augue
                                                         nisi</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£69.00</span>
@@ -216,7 +216,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-9%</span>
@@ -247,7 +247,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">eget
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">eget
                                                         sagittis</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£65.00</span>
@@ -263,7 +263,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-6%</span>
@@ -294,7 +294,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">fringilla
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">fringilla
                                                         augue</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£68.00</span>
@@ -306,7 +306,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-5%</span>
@@ -337,7 +337,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">massa massa</a>
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">massa massa</a>
                                                 </h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£75.00</span>
@@ -353,7 +353,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-8%</span>
@@ -384,7 +384,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">placerat
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">placerat
                                                         vestibulum</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£65.00</span>
@@ -396,7 +396,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-9%</span>
@@ -427,7 +427,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">Porro Cook</a>
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">Porro Cook</a>
                                                 </h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£62.00</span>
@@ -443,7 +443,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-4%</span>
@@ -474,7 +474,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">sapien
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">sapien
                                                         libero</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£69.00</span>
@@ -486,7 +486,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-6%</span>
@@ -517,7 +517,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">vulputate
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">vulputate
                                                         rutrum</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£64.00</span>
@@ -533,7 +533,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-8%</span>
@@ -564,7 +564,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">adipiscing
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">adipiscing
                                                         cursus</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£60.00</span>
@@ -576,7 +576,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-9%</span>
@@ -607,7 +607,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">Donec eu
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">Donec eu
                                                         cook</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£67.00</span>
@@ -629,7 +629,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-4%</span>
@@ -660,7 +660,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">sapien
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">sapien
                                                         libero</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£69.00</span>
@@ -672,7 +672,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-6%</span>
@@ -703,7 +703,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">vulputate
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">vulputate
                                                         rutrum</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£64.00</span>
@@ -719,7 +719,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-8%</span>
@@ -750,7 +750,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">adipiscing
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">adipiscing
                                                         cursus</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£60.00</span>
@@ -762,7 +762,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-9%</span>
@@ -793,7 +793,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">Donec eu
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">Donec eu
                                                         cook</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£67.00</span>
@@ -809,7 +809,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-7%</span>
@@ -840,7 +840,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">commodo augue
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">commodo augue
                                                         nisi</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£69.00</span>
@@ -852,7 +852,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-9%</span>
@@ -883,7 +883,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">eget
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">eget
                                                         sagittis</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£65.00</span>
@@ -899,7 +899,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-6%</span>
@@ -930,7 +930,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">fringilla
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">fringilla
                                                         augue</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£68.00</span>
@@ -942,7 +942,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-5%</span>
@@ -973,7 +973,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">massa massa</a>
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">massa massa</a>
                                                 </h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£75.00</span>
@@ -989,7 +989,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-8%</span>
@@ -1020,7 +1020,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">placerat
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">placerat
                                                         vestibulum</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£65.00</span>
@@ -1032,7 +1032,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-9%</span>
@@ -1063,7 +1063,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">Porro Cook</a>
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">Porro Cook</a>
                                                 </h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£62.00</span>
@@ -1085,7 +1085,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-6%</span>
@@ -1116,7 +1116,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">fringilla
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">fringilla
                                                         augue</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£68.00</span>
@@ -1128,7 +1128,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-5%</span>
@@ -1159,7 +1159,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">massa massa</a>
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">massa massa</a>
                                                 </h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£75.00</span>
@@ -1175,7 +1175,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-8%</span>
@@ -1206,7 +1206,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">placerat
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">placerat
                                                         vestibulum</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£65.00</span>
@@ -1218,7 +1218,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-9%</span>
@@ -1249,7 +1249,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">Porro Cook</a>
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">Porro Cook</a>
                                                 </h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£62.00</span>
@@ -1265,7 +1265,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-4%</span>
@@ -1296,7 +1296,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">sapien
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">sapien
                                                         libero</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£69.00</span>
@@ -1308,7 +1308,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-6%</span>
@@ -1339,7 +1339,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">vulputate
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">vulputate
                                                         rutrum</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£64.00</span>
@@ -1355,7 +1355,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-7%</span>
@@ -1386,7 +1386,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">commodo augue
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">commodo augue
                                                         nisi</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£69.00</span>
@@ -1398,7 +1398,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-9%</span>
@@ -1429,7 +1429,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">eget
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">eget
                                                         sagittis</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£65.00</span>
@@ -1445,7 +1445,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-8%</span>
@@ -1476,7 +1476,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">adipiscing
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">adipiscing
                                                         cursus</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£60.00</span>
@@ -1488,7 +1488,7 @@
                                     <article class="single_product">
                                         <figure>
                                             <div class="product_thumb">
-                                                <a class="primary_img" href="{{ route('product') }}"><img
+                                                <a class="primary_img" href="{{ route('shop') }}"><img
                                                         src="/nhuplants/assets/images/product1.webp" alt=""></a>
                                                 <div class="label_product">
                                                     <span class="label_sale">-9%</span>
@@ -1519,7 +1519,7 @@
                                                         <li><a href="#"><i class="icon-star"></i></a></li>
                                                     </ul>
                                                 </div>
-                                                <h4 class="product_name"><a href="{{ route('product') }}">Donec eu
+                                                <h4 class="product_name"><a href="{{ route('shop') }}">Donec eu
                                                         cook</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">£67.00</span>

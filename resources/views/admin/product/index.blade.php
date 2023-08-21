@@ -80,9 +80,20 @@
                             @foreach ($products as $product)
                                 <tr>
                                     <td>{{ $product->id }}</td>
-                                    <td>{{ $product->title }}</td>
-                                    <td>{{ number_format($product->price) }}</td>
-                                    <td><img src="/{{ $product->image }}" class="img-thumbnail" width="90" height="100"></td>
+                                    <td>
+                                        {{ $product->title }}
+                                        @if ($product->label)
+                                            | <span class="badge bg-label-danger">{{ $product->label }}</span>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        {{ number_format($product->price) }} đ
+                                        @if ($product->price_old)
+                                            <br/>
+                                            <del>{{ number_format($product->price_old) }} đ</del>
+                                        @endif
+                                    </td>
+                                    <td><img src="/{{ $product->image }}" class="img-thumbnail" width="100" height="100"></td>
                                     <td>
                                         @switch($product->status)
                                             @case(config('constants.status.destroy'))

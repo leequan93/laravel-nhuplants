@@ -44,11 +44,33 @@
                             </div>
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label">
+                                    Label
+                                </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Label" name="label">
+                                    @error('label')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label">
                                     Price <span class="required">*</span>
                                 </label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" placeholder="Price" name="price">
                                     @error('price')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label">
+                                    Price old
+                                </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Price old" name="price_old">
+                                    @error('price_old')
                                         <p class="text-danger">{{ $message }}</p>
                                     @enderror
                                 </div>

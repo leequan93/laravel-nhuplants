@@ -10,7 +10,8 @@
                         <h1>Sản phẩm</h1>
                         <ul>
                             <li><a href="{{ route('home') }}">Home</a></li>
-                            <li>Product Details</li>
+                            <li><a href="{{ route('shop') }}">Shop</a></li>
+                            <li>Product</li>
                         </ul>
                     </div>
                 </div>
@@ -25,109 +26,47 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="product-details-tab">
-                        <div id="img-1" class="zoomWrapper single-zoom">
-                            <a href="#">
-                                <img id="zoom1" src="/nhuplants/assets/images/productbig4.webp"
-                                    data-zoom-image="/nhuplants/assets/images/productbig4.webp" alt="big-1">
-                            </a>
+                        <div class="zoomWrapper single-zoom">
+                            <img id="zoom1" src="/{{ $product->image }}" alt="big-1">
                         </div>
                         <div class="single-zoom-thumb">
                             <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
-                                <li>
-                                    <a href="#" class="elevatezoom-gallery active" data-update=""
-                                        data-image="/nhuplants/assets/images/productbig4.webp"
-                                        data-zoom-image="/nhuplants/assets/images/productbig4.webp">
-                                        <img src="/nhuplants/assets/images/productbig4.webp" alt="zo-th-1" />
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="elevatezoom-gallery active" data-update=""
-                                        data-image="/nhuplants/assets/images/productbig1.webp"
-                                        data-zoom-image="/nhuplants/assets/images/productbig1.webp">
-                                        <img src="/nhuplants/assets/images/productbig1.webp" alt="zo-th-1" />
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="elevatezoom-gallery active" data-update=""
-                                        data-image="/nhuplants/assets/images/productbig2.webp"
-                                        data-zoom-image="/nhuplants/assets/images/productbig2.webp">
-                                        <img src="/nhuplants/assets/images/productbig2.webp" alt="zo-th-1" />
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="elevatezoom-gallery active" data-update=""
-                                        data-image="/nhuplants/assets/images/productbig3.webp"
-                                        data-zoom-image="/nhuplants/assets/images/productbig3.webp">
-                                        <img src="/nhuplants/assets/images/productbig3.webp" alt="zo-th-1" />
-                                    </a>
-
-                                </li>
+                                @foreach ($product->product_image_extras as $product_image_extra)
+                                    <li>
+                                        <a href="#" class="elevatezoom-gallery active" data-image="/{{ $product_image_extra->image }}">
+                                            <img src="/{{ $product_image_extra->image }}" alt="zo-th-1" />
+                                        </a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="product_d_right">
+                    <div class="product_d_right mt-30">
                         <form action="#">
-
-                            <h1><a href="#">commodo augue nisi</a></h1>
-                            <div class="product_nav">
-                                <ul>
-                                    <li class="prev"><a href="product-details.html"><i class="fa fa-angle-left"></i></a>
-                                    </li>
-                                    <li class="next"><a href="variable-product.html"><i
-                                                class="fa fa-angle-right"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class=" product_ratting">
-                                <ul>
-                                    <li><a href="#"><i class="icon-star"></i></a></li>
-                                    <li><a href="#"><i class="icon-star"></i></a></li>
-                                    <li><a href="#"><i class="icon-star"></i></a></li>
-                                    <li><a href="#"><i class="icon-star"></i></a></li>
-                                    <li><a href="#"><i class="icon-star"></i></a></li>
-                                    <li class="review"><a href="#"> (customer review ) </a></li>
-                                </ul>
-
-                            </div>
+                            <h2>{{ $product->title }}</h2>
                             <div class="price_box">
-                                <span class="current_price">£70.00</span>
-                                <span class="old_price">£80.00</span>
+                                <span class="current_price">{{ number_format($product->price) }} đ</span>
+                                @if ($product->price_old)
+                                    <span class="old_price">{{ number_format($product->price_old) }} đ</span>
+                                @endif
 
                             </div>
-                            <div class="product_desc">
-                                <p>eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus
-                                    eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non
-                                    neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et
-                                    placerat vestibulum, metus nisi posuere nisl, in </p>
-                            </div>
-                            <div class="product_variant color">
-                                <h3>Available Options</h3>
-                                <label>color</label>
-                                <ul>
-                                    <li class="color1"><a href="#"></a></li>
-                                    <li class="color2"><a href="#"></a></li>
-                                    <li class="color3"><a href="#"></a></li>
-                                    <li class="color4"><a href="#"></a></li>
-                                </ul>
-                            </div>
+                            <div class="product_desc">{!! $product->description !!}</div>
                             <div class="product_variant quantity">
                                 <label>quantity</label>
                                 <input min="1" max="100" value="1" type="number">
-                                <button class="button" type="submit">add to cart</button>
+                                <button class="button" type="submit">Thêm vào giỏ hàng</button>
 
                             </div>
-                            <div class=" product_d_action">
-                                <ul>
-                                    <li><a href="#" title="Add to wishlist">+ Add to Wishlist</a></li>
-                                    <li><a href="#" title="Add to wishlist">+ Compare</a></li>
-                                </ul>
-                            </div>
                             <div class="product_meta">
-                                <span>Category: <a href="#">Clothing</a></span>
+                                <span>
+                                    Category: 
+                                    <a href="{{ route('shop') }}?category={{ $product->category->id }}">
+                                        {{ $product->category->title }}
+                                    </a>
+                                </span>
                             </div>
 
                         </form>

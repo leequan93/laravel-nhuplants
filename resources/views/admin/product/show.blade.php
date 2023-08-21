@@ -243,6 +243,17 @@
                             </div>
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label">
+                                    Label
+                                </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Label" name="label" value="{{ $product->label }}">
+                                    @error('label')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label">
                                     Price <span class="required">*</span>
                                 </label>
                                 <div class="col-sm-10">
@@ -252,9 +263,20 @@
                                     @enderror
                                 </div>
                             </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label">
+                                    Price old
+                                </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Price old" name="price_old" value="{{ $product->price_old }}">
+                                    @error('price_old')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
+                                </div>
+                            </div>
                             <div class="row mb-3 justify-content-end">
                                 <div class="col-sm-10">
-                                    <img src="/{{ $product->image }}" class="img-thumbnail" width="90" height="100">
+                                    <img src="/{{ $product->image }}" class="img-thumbnail" width="100" height="100">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -271,20 +293,18 @@
                             @if (count($product->product_image_extras))
                                 <div class="row mb-3 justify-content-end">
                                     <div class="col-sm-10">
-                                        <div class="row">
+                                        <ul class="list-inline">
                                             @foreach ($product->product_image_extras as $product_image_extra)
-                                                <div class="col-md-4 col-lg-3 mb-3">
-                                                    <div class="card">
-                                                        <img class="card-img" src="/{{ $product_image_extra->image }}" width="100" height="100">
-                                                        <div class="card-img-overlay card-img-overlay-btn">
-                                                            <button type="button" class="btn btn-xs btn-icon btn-outline-danger" onClick="productImageExtraDestroy({{ $product_image_extra->id }})">
-                                                                <i class='bx bx-x'></i>
-                                                            </button>
-                                                        </div>
+                                                <li class="list-inline-item">
+                                                    <div class="image-area">
+                                                        <img src="/{{ $product_image_extra->image }}" width="100" height="100">
+                                                        <a class="remove-image btn btn-xs btn-icon btn-danger" href="javascript:productImageExtraDestroy({{ $product_image_extra->id }})">
+                                                            <i class="bx bx-x"></i>
+                                                        </a>
                                                     </div>
-                                                </div>
+                                                </li>
                                             @endforeach
-                                        </div>
+                                        </ul>
                                     </div>
                                 </div>
                             @endif

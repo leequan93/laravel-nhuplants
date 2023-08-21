@@ -17,11 +17,8 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::get('/shop', [App\Http\Controllers\ShopController::class, 'index'])->name('shop');
-
-Route::get('/product', function () {
-    return view('product');
-})->name('product');
+Route::get('/shop', [App\Http\Controllers\ProductController::class, 'index'])->name('shop');
+Route::get('/shop/{product}', [App\Http\Controllers\ProductController::class, 'show'])->name('product');
 
 Route::get('/cart', function () {
     return view('cart');

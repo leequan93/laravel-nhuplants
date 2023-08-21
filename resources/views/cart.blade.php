@@ -10,7 +10,7 @@
                         <h1>Giỏ hàng</h1>
                         <ul>
                             <li><a href="{{ route('home') }}">Home</a></li>
-                            <li>Shopping Cart</li>
+                            <li>Cart</li>
                         </ul>
                     </div>
                 </div>

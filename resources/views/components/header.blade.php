@@ -40,10 +40,10 @@
                                 <a href="{{ route('shop') }}">shop</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="{{ route('cart') }}">cart</a>
+                                <a href="{{ route('cart') }}">Giỏ hàng</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="{{ route('about-us') }}">about us</a>
+                                <a href="{{ route('about-us') }}">Về chúng tôi</a>
                             </li>
                         </ul>
                     </div>
@@ -124,10 +124,10 @@
                                         <a href="{{ route('shop') }}">shop</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('cart') }}">cart</a>
+                                        <a href="{{ route('cart') }}">Giỏ hàng</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('about-us') }}">about us</a>
+                                        <a href="{{ route('about-us') }}">Về chúng tôi</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -137,9 +137,9 @@
                     <div class="col-lg-4 col-md-6 col-sm-5 col-6">
                         <div class="header_right_info header_right_two">
                             <div class="search_container">
-                                <form action="#">
+                                <form action="{{ route('shop') }}" method="GET">
                                     <div class="search_box">
-                                        <input placeholder="Search product..." type="text">
+                                        <input placeholder="Search product..." type="text" name="title">
                                         <button type="submit">
                                             <i class="icon-search"></i>
                                         </button>
@@ -147,30 +147,6 @@
                                 </form>
                             </div>
                             <div class="header_account_area">
-                                <div class="header_account-list top_links">
-                                    <a href="#">
-                                        <i class="icon-users"></i>
-                                    </a>
-                                    <ul class="dropdown_links">
-                                        <li>
-                                            <a href="checkout.html">Checkout </a>
-                                        </li>
-                                        <li>
-                                            <a href="my-account.html">My Account </a>
-                                        </li>
-                                        <li>
-                                            <a href="cart.html">Shopping Cart</a>
-                                        </li>
-                                        <li>
-                                            <a href="wishlist.html">Wishlist</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="header_account-list header_wishlist">
-                                    <a href="wishlist.html">
-                                        <i class="icon-heart"></i>
-                                    </a>
-                                </div>
                                 <div class="header_account-list  mini_cart_wrapper">
                                     <a href="javascript:void(0)">
                                         <i class="icon-shopping-bag"></i>

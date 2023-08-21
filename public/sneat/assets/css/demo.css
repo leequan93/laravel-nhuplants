@@ -126,3 +126,13 @@
   padding: 10px;
   left: auto;
 }
+
+.image-area {
+  position: relative;
+}
+
+.remove-image {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
