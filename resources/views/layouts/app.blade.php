@@ -243,5 +243,7 @@
         <script src="/nhuplants/assets/js/plugins.js"></script>
         <!-- Main JS -->
         <script src="/nhuplants/assets/js/main.js"></script>
+        <!-- Page JS -->
+        @yield('js')
     </body>
 </html>

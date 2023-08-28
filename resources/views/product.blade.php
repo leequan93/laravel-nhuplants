@@ -44,7 +44,8 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="product_d_right mt-30">
-                        <form action="#">
+                        <form action="{{ route('cart.store', $product) }}" method="POST">
+                            @csrf
                             <h2>{{ $product->title }}</h2>
                             <div class="price_box">
                                 <span class="current_price">{{ number_format($product->price) }} đ</span>
@@ -56,7 +57,7 @@
                             <div class="product_desc">{!! $product->description !!}</div>
                             <div class="product_variant quantity">
                                 <label>quantity</label>
-                                <input min="1" max="100" value="1" type="number">
+                                <input min="1" max="100" value="1" type="number" name="total">
                                 <button class="button" type="submit">Thêm vào giỏ hàng</button>
 
                             </div>

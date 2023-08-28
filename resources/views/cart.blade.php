@@ -22,7 +22,9 @@
     <!--shopping cart area start -->
     <div class="shopping_cart_area mt-100">
         <div class="container">
-            <form action="#">
+            <form action="{{ route('cart.update') }}" method="POST">
+                @csrf
+                @method('put')
                 <div class="row">
                     <div class="col-12">
                         <div class="table_desc">
@@ -39,49 +41,34 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                            <td class="product_thumb"><a href="#"><img
-                                                        src="assets/img/s-product/product.jpg" alt=""></a></td>
-                                            <td class="product_name"><a href="#">Handbag fringilla</a></td>
-                                            <td class="product-price">£65.00</td>
-                                            <td class="product_quantity"><label>Quantity</label> <input min="1"
-                                                    max="100" value="1" type="number"></td>
-                                            <td class="product_total">£130.00</td>
-
-
-                                        </tr>
-
-                                        <tr>
-                                            <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                            <td class="product_thumb"><a href="#"><img
-                                                        src="assets/img/s-product/product2.jpg" alt=""></a></td>
-                                            <td class="product_name"><a href="#">Handbags justo</a></td>
-                                            <td class="product-price">£90.00</td>
-                                            <td class="product_quantity"><label>Quantity</label> <input min="1"
-                                                    max="100" value="1" type="number"></td>
-                                            <td class="product_total">£180.00</td>
-
-
-                                        </tr>
-                                        <tr>
-                                            <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                            <td class="product_thumb"><a href="#"><img
-                                                        src="assets/img/s-product/product3.jpg" alt=""></a></td>
-                                            <td class="product_name"><a href="#">Handbag elit</a></td>
-                                            <td class="product-price">£80.00</td>
-                                            <td class="product_quantity"><label>Quantity</label> <input min="1"
-                                                    max="100" value="1" type="number"></td>
-                                            <td class="product_total">£160.00</td>
-
-
-                                        </tr>
-
+                                        @foreach($products as $product)
+                                            <tr id="product_{{ $product->id }}">
+                                                <td class="product_remove">
+                                                    <a href="javascript:remove('product_{{ $product->id }}')"><i class="fa fa-trash-o"></i></a>
+                                                </td>
+                                                <td class="product_thumb">
+                                                    <a href="{{ route('product', $product) }}">
+                                                        <img src="{{ $product->image }}" alt="{{ $product->title }}">
+                                                    </a>
+                                                </td>
+                                                <td class="product_name">
+                                                    <a href="{{ route('product', $product) }}">
+                                                        {{ $product->title }}
+                                                    </a>
+                                                </td>
+                                                <td class="product-price">{{ number_format($product->price) }} đ</td>
+                                                <td class="product_quantity">
+                                                    <label>Quantity</label> 
+                                                    <input min="1" max="100" value="{{ $product->total }}" type="number" name="cart[{{ $product->id }}]">
+                                                </td>
+                                                <td class="product_total">{{ number_format($product->price * $product->total) }} đ</td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="cart_submit">
+                                <button type="submit">update cart</button>
                             </div>
                         </div>
                     </div>
@@ -130,4 +117,12 @@
         </div>
     </div>
     <!--shopping cart area end -->
+@endsection
+
+@section('js')
+    <script type="text/javascript">
+        function remove($id) {
+            document.getElementById($id).remove();
+        }
+    </script>
 @endsection

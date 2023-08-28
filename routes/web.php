@@ -20,9 +20,9 @@ Route::get('/', function () {
 Route::get('/shop', [App\Http\Controllers\ProductController::class, 'index'])->name('shop');
 Route::get('/shop/{product}', [App\Http\Controllers\ProductController::class, 'show'])->name('product');
 
-Route::get('/cart', function () {
-    return view('cart');
-})->name('cart');
+Route::get('/cart', [App\Http\Controllers\OrderController::class, 'index'])->name('cart');
+Route::post('/cart/store/{product}', [App\Http\Controllers\OrderController::class, 'store'])->name('cart.store');
+Route::put('/cart/update', [App\Http\Controllers\OrderController::class, 'update'])->name('cart.update');
 
 Route::get('/about-us', function () {
     return view('about-us');

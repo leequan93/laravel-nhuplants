@@ -22,7 +22,7 @@ class Header extends Component
      */
     public function render(): View|Closure|string
     {
-        $categories = Category::where('status', '=', config('constants.status.public'))->get();
+        $categories = Category::where('status', '=', config('constants.status.public'))->orderBy('order')->get();
 
         return view('components.header', [
             'categories' => $categories

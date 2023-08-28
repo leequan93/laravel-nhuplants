@@ -11,7 +11,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         // categories
-        $categories = Category::where('status', '=', config('constants.status.public'))->get();
+        $categories = Category::where('status', '=', config('constants.status.public'))->orderBy('order')->get();
 
         // products
         $products = Product::select('products.*')
